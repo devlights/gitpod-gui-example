@@ -4,4 +4,4 @@ ports:
   - port: 6080
 tasks:
   - init: 'go get -v ./...'
-    command: 'go run . & && echo "$!" > app.pid'
+    command: 'go run . &; echo "$!" > app.pid'
