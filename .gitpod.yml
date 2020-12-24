@@ -3,5 +3,6 @@ image:
 ports:
   - port: 6080
 tasks:
-  - init: 'go get -v ./...'
-    command: 'go run . &; echo "$!" > app.pid'
+  - init: make init
+    command: make run
+Updat
