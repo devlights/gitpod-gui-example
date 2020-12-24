@@ -3,5 +3,5 @@ image:
 ports:
   - port: 6080
 tasks:
-  - init: 'echo "TODO: Replace with init/build command"'
-    command: 'echo "TODO: Replace with command to start project"'
+  - init: 'go get -v ./...'
+    command: 'go run .'
