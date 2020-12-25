@@ -5,4 +5,3 @@ ports:
 tasks:
   - init: make init
     command: make run
-Updat
