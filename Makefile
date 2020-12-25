@@ -1,10 +1,13 @@
 init:
 	go get -v ./...
 
-build:
-	go build -o app .
+prepare:
+	mkdir -p bin
+
+build: prepare
+	go build -o ./bin/fyneapp ./cmd/fyneapp
 
 run: build
-	./app &
-	echo "$!" > app.pid
+	./bin/fyneapp &
+	echo "$!" > ./bin/fyneapp.pid
 
