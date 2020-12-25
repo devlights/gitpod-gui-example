@@ -19,7 +19,6 @@ func run() int {
 
 func setupUI() {
 	a := app.New()
-	defer a.Quit()
 
 	w := a.NewWindow("Hello Fyne")
 	w.Resize(fyne.NewSize(200, 100))
